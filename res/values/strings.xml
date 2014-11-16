@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">视频</string>
+    
+    
+	<string name="tuijian">推荐视频</string>
+	<string name="pindao">频        道</string>
+</resources>
