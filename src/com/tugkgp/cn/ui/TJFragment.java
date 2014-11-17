@@ -49,6 +49,7 @@ public class TJFragment extends Fragment implements OnHeaderRefreshListener,
 	BaseActivity activity;
 	MBaseAdapter adapter;
 	private int page;
+	private int pagesize = 20;
 
 	ArrayList<VideoItem> videos = new ArrayList<VideoItem>();
 	
@@ -108,7 +109,7 @@ public class TJFragment extends Fragment implements OnHeaderRefreshListener,
 
 	private void getData() {
 		activity.showTitleProgress(true);
-		String url = Constants.getVideoUrl()+"&pagesize=21&page="+page;
+		String url = Constants.getVideoUrl()+"&pagesize="+pagesize+"&page="+page;
 		http.send(HttpMethod.GET,url,
 				new RequestCallBack<String>() {
 					@Override
@@ -136,7 +137,7 @@ public class TJFragment extends Fragment implements OnHeaderRefreshListener,
 										new TypeToken<ArrayList<VideoItem>>() {
 										});
 						
-						if(mvideos.size()<21){
+						if(mvideos.size()<pagesize){
 							pullview.setLoadMoreEnable(false);
 						}else{
 							pullview.setLoadMoreEnable(true);

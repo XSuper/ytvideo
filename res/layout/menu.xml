@@ -28,7 +28,6 @@
                 android:paddingLeft="40dip"
                 android:text="@string/tuijian"
                 android:textColor="@color/white"
-                android:textStyle="bold"
                 android:textSize="18sp" 
                 android:checked="true"
                 />
@@ -45,7 +44,19 @@
                 android:text="@string/pindao"
                 android:textColor="@color/white"
                 android:textSize="18sp" 
-                android:textStyle="bold"
+                />
+            <RadioButton
+                android:id="@+id/about"
+                android:layout_width="fill_parent"
+                android:layout_height="80dip"
+                android:background="@drawable/menu_btn_bg"
+                android:button="@null"
+                android:drawableLeft="@drawable/zf_icon"
+                android:drawablePadding="20dip"
+                android:paddingLeft="40dip"
+                android:text="@string/about"
+                android:textColor="@color/white"
+                android:textSize="18sp" 
                 />
         </RadioGroup>
     </com.jeremyfeinstein.slidingmenu.lib.SlidingMenu>

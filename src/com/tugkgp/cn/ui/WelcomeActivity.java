@@ -42,7 +42,7 @@ public class WelcomeActivity extends BaseActivity{
 		BaseApiInterface.getCoreSdkIntance().queryTokenStatus(getBaseContext());
 		
 		AlphaAnimation a = new AlphaAnimation(0.7f,1f);
-		a.setDuration(15000);
+		a.setDuration(2000);
 		v.setAnimation(a);
 		a.setAnimationListener(new AnimationListener() {
 			

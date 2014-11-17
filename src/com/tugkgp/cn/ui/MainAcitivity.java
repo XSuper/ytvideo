@@ -53,9 +53,6 @@ public class MainAcitivity extends BaseActivity implements
 			}
 		});
 
-		
-		
-
 		menu = new SlidingMenu(this);
 		menu.setMode(SlidingMenu.LEFT);
 		menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
@@ -98,7 +95,8 @@ public class MainAcitivity extends BaseActivity implements
 						public void onClick(DialogInterface dialog, int which) {
 							dialog.dismiss();
 
-							ActivityTask.getActivityTask().AppExit(getApplicationContext());
+							ActivityTask.getActivityTask().AppExit(
+									getApplicationContext());
 						}
 					});
 			builder.setNegativeButton("取消",
@@ -132,6 +130,10 @@ public class MainAcitivity extends BaseActivity implements
 		case R.id.tj:
 			getSupportFragmentManager().beginTransaction()
 					.replace(R.id.main_acivity, new TJFragment()).commit();
+			break;
+		case R.id.about:
+			getSupportFragmentManager().beginTransaction()
+					.replace(R.id.main_acivity, new AboutFragment()).commit();
 			break;
 		}
 

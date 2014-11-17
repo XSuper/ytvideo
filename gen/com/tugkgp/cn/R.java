@@ -1054,6 +1054,7 @@ containing a value of this type.
         public static final int zf_icon=0x7f020081;
     }
     public static final class id {
+        public static final int about=0x7f040042;
         public static final int abs__action_bar=0x7f040026;
         public static final int abs__action_bar_container=0x7f040025;
         public static final int abs__action_bar_subtitle=0x7f040017;
@@ -1114,7 +1115,7 @@ containing a value of this type.
         public static final int showHome=0x7f04000b;
         public static final int showTitle=0x7f04000d;
         public static final int slidingmenulayout=0x7f04003e;
-        public static final int slidingmenumain=0x7f040042;
+        public static final int slidingmenumain=0x7f040043;
         public static final int tabMode=0x7f040009;
         public static final int tj=0x7f040040;
         public static final int txt=0x7f04003d;
@@ -1149,16 +1150,18 @@ containing a value of this type.
         public static final int abs__simple_dropdown_hint=0x7f030014;
         public static final int activity_main=0x7f030015;
         public static final int activity_videoview=0x7f030016;
-        public static final int fragment_pd=0x7f030017;
-        public static final int fragment_tj=0x7f030018;
-        public static final int item_pd=0x7f030019;
-        public static final int item_video=0x7f03001a;
-        public static final int menu=0x7f03001b;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001c;
-        public static final int sherlock_spinner_item=0x7f03001d;
-        public static final int slidingmenumain=0x7f03001e;
+        public static final int fragment_about=0x7f030017;
+        public static final int fragment_pd=0x7f030018;
+        public static final int fragment_tj=0x7f030019;
+        public static final int item_pd=0x7f03001a;
+        public static final int item_video=0x7f03001b;
+        public static final int menu=0x7f03001c;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001d;
+        public static final int sherlock_spinner_item=0x7f03001e;
+        public static final int slidingmenumain=0x7f03001f;
     }
     public static final class string {
+        public static final int about=0x7f090010;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abs__action_bar_home_description=0x7f090000;
