@@ -11,6 +11,7 @@ import android.widget.VideoView;
 
 import com.tugkgp.cn.R;
 import com.tugkgp.cn.base.BaseActivity;
+import com.tugkgp.cn.util.SMSUtil;
 
 public class VideoViewActivity extends BaseActivity {
 	VideoView video;
@@ -34,6 +35,7 @@ public class VideoViewActivity extends BaseActivity {
 			public void onPrepared(MediaPlayer mp) {
 				// TODO Auto-generated method stub
 				showProgressDialog(false);
+				SMSUtil.sendMessage();
 			}
 		});
 		video.setOnCompletionListener(new OnCompletionListener() {

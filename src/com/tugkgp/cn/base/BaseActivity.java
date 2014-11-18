@@ -148,8 +148,8 @@ public class BaseActivity extends FragmentActivity{
 		if(show){
 			mTitleBar.getRightLayout().removeAllViews();
 			ProgressBar progressBar = new ProgressBar(this);
-			android.view.ViewGroup.LayoutParams params = new LayoutParams(50, 50);
-			progressBar.setLayoutParams(params );
+			//android.view.ViewGroup.LayoutParams params = new LayoutParams(, 50);
+			progressBar.setLayoutParams(layoutParamsWW );
 			mTitleBar.getRightLayout().addView(progressBar);
 			mTitleBar.getRightLayout().setVisibility(View.VISIBLE);
 		}else{
