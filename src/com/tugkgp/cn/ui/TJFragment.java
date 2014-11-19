@@ -49,7 +49,7 @@ public class TJFragment extends Fragment implements OnHeaderRefreshListener,
 	BaseActivity activity;
 	MBaseAdapter adapter;
 	private int page;
-	private int pagesize = 20;
+	private int pagesize = 16;
 
 	ArrayList<VideoItem> videos = new ArrayList<VideoItem>();
 	

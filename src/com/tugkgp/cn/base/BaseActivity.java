@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.tugkgp.cn.R;
 import com.tugkgp.cn.util.AbAppUtil;
+import com.tugkgp.cn.util.AbViewUtil;
 import com.tugkgp.cn.view.TitleBar;
 
 
@@ -148,8 +149,10 @@ public class BaseActivity extends FragmentActivity{
 		if(show){
 			mTitleBar.getRightLayout().removeAllViews();
 			ProgressBar progressBar = new ProgressBar(this);
-			//android.view.ViewGroup.LayoutParams params = new LayoutParams(, 50);
-			progressBar.setLayoutParams(layoutParamsWW );
+			float w =
+					AbViewUtil.dip2px(this, 25);
+			android.view.ViewGroup.LayoutParams params = new LayoutParams((int)w, (int)w);
+			progressBar.setLayoutParams(params );
 			mTitleBar.getRightLayout().addView(progressBar);
 			mTitleBar.getRightLayout().setVisibility(View.VISIBLE);
 		}else{
