@@ -2,6 +2,13 @@ package com.tugkgp.cn.bean;
 
 public class Column {
 
+	private String id;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	private String title;
 	private String focusiconurl;
 	private String iconurl;

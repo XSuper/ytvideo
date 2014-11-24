@@ -1,6 +1,9 @@
 package com.tugkgp.cn.bean;
 
+import com.lidroid.xutils.db.annotation.Id;
+
 public class VideoItem {
+	@Id
 	private String itemid;
 	private String totaltime;
 	private String picurl;

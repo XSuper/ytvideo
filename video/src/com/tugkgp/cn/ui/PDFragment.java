@@ -17,8 +17,10 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 
 import com.google.gson.reflect.TypeToken;
+import com.lidroid.xutils.DbUtils;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.exception.DbException;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
@@ -48,6 +50,7 @@ public class PDFragment extends Fragment {
 
 	BaseActivity activity;
 	MBaseAdapter adapter;
+	
 
 	private ArrayList<Column> columns = new ArrayList<Column>();
 
@@ -58,15 +61,16 @@ public class PDFragment extends Fragment {
 			Bundle savedInstanceState) {
 		view = inflater.from(getActivity()).inflate(R.layout.fragment_pd,
 				null);
-		ViewUtils.inject(this, view);
 		activity = ((BaseActivity) getActivity());
+		
+		ViewUtils.inject(this, view);
 		http = new HttpUtils();
 		
 		// mAbPullListView.getFooterView().setFooterProgressBarDrawable(this.getResources().getDrawable(R.drawable.progress_circular2));
 		grid.setColumnWidth(AbViewUtil.scale(activity, 200));
 		grid.setGravity(Gravity.CENTER);
 		grid.setHorizontalSpacing(5);
-		
+		if(columns==null)columns = new ArrayList<Column>();
 		adapter = new ColumnAdapter(activity, columns);
 		grid.setAdapter(adapter);
 		grid.setOnItemClickListener(new OnItemClickListener() {
@@ -116,6 +120,7 @@ public class PDFragment extends Fragment {
 								.fromJson(str,
 										new TypeToken<ArrayList<Column>>() {
 										});
+						
 						adapter.refresh(columns);
 					}
 				});

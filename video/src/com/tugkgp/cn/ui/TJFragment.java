@@ -62,7 +62,6 @@ public class TJFragment extends Fragment implements OnHeaderRefreshListener,
 		ViewUtils.inject(this, view);
 		activity = ((BaseActivity) getActivity());
 		http = new HttpUtils();
-		
 		pullview.setOnHeaderRefreshListener(this);
 		pullview.setOnFooterLoadListener(this);
 		pullview.getHeaderView().setHeaderProgressBarDrawable(
@@ -74,7 +73,6 @@ public class TJFragment extends Fragment implements OnHeaderRefreshListener,
 		grid.setColumnWidth(AbViewUtil.scale(activity, 200));
 		grid.setGravity(Gravity.CENTER);
 		grid.setHorizontalSpacing(5);
-		
 		adapter = new VideoAdapter(activity, videos);
 		grid.setAdapter(adapter);
 		grid.setOnItemClickListener(new OnItemClickListener() {
@@ -145,6 +143,7 @@ public class TJFragment extends Fragment implements OnHeaderRefreshListener,
 						if(page==0){
 							videos = mvideos;
 							pullview.onHeaderRefreshFinish();
+							
 						}else{
 							videos.addAll(mvideos);
 							pullview.onFooterLoadFinish();

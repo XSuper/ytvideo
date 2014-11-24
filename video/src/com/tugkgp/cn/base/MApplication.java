@@ -7,22 +7,15 @@ import android.util.Log;
 
 public class MApplication extends Application {
 
-	Handler handler = new Handler() {
-		@Override
-		public void handleMessage(Message msg) {
-			// TODO Auto-generated method stub
-
-			Log.d("init", msg.what + "");
-			Log.d("init", msg.toString());
-			super.handleMessage(msg);
-		}
-	};
-
+	private static MApplication mApplication;
+	public static MApplication getApplication(){
+		return mApplication;
+	}
 	@Override
 	public void onCreate() {
 		// TODO Auto-generated method stub
 		super.onCreate();
-
+		mApplication  = this;
 		
 	}
 

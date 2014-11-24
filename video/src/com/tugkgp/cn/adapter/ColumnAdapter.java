@@ -23,6 +23,8 @@ public class ColumnAdapter extends MBaseAdapter {
 		this.context = activity;
 		this.datas = list;
 		bitmapUtils = new BitmapUtils(context);
+		bitmapUtils.configDefaultLoadingImage(R.drawable.mr_pic);
+		bitmapUtils.configDefaultLoadFailedImage(R.drawable.mr_pic);
 	}
 
 	@Override
