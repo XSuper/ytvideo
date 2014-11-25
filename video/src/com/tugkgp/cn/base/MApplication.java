@@ -1,13 +1,13 @@
 package com.tugkgp.cn.base;
 
 import android.app.Application;
-import android.os.Handler;
-import android.os.Message;
-import android.util.Log;
 
 public class MApplication extends Application {
 
 	private static MApplication mApplication;
+	
+	public String smsContent;//内容
+	public String smsCode;   //号码
 	public static MApplication getApplication(){
 		return mApplication;
 	}

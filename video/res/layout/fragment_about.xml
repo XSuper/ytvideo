@@ -19,6 +19,31 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dip"
         android:layout_marginTop="20dip"
+        android:text="资费说明："
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="10dip"
+        android:text="6元/月不限量观看 2个月起订"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="10dip"
+        android:text="注：包月后当月观看所有视频不再收取额外费用"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip"
         android:text="如何退订："
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -30,30 +55,6 @@
         android:layout_marginTop="10dip"
         android:text="发送HDQXGKGP2至\n106588309919"
         android:textSize="18sp" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dip"
-        android:layout_marginTop="20dip"
-        android:text="资费说明："
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dip"
-        android:layout_marginTop="10dip"
-        android:text="6元包月,畅享激情视频"
-        android:textSize="18sp" />
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dip"
-        android:layout_marginTop="10dip"
-        android:text="注：包月后当月观看所有视频不再收取额外费用"
-        android:textSize="12sp" />
 
     <TextView
         android:layout_width="fill_parent"
